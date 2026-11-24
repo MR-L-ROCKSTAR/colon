@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klausur-Trainer Spanisch | Unidad 3 & Textarbeit</title>
+    <title>Entrenador para el examen | Unidad 3, Resumen y Comentario</title>
     <style>
         :root {
             --primary: #c0392b;
@@ -50,8 +50,8 @@
 
         header p {
             font-size: 1rem;
-            opacity: 0.92;
-            max-width: 650px;
+            opacity: 0.94;
+            max-width: 680px;
             margin: 0 auto;
         }
 
@@ -177,9 +177,9 @@
             color: var(--text);
         }
 
-        .grid-2 {
+        .grid-2, .grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 1.2rem;
         }
 
@@ -189,6 +189,10 @@
             padding: 1rem;
             border-radius: 0 8px 8px 0;
             margin-bottom: 1rem;
+        }
+
+        .info-box.blue {
+            border-left-color: #2980b9;
         }
 
         .info-box.green {
@@ -216,6 +220,11 @@
             background: #fdecea;
             color: var(--primary);
             margin-bottom: 0.4rem;
+        }
+
+        .badge.blue {
+            background: #ebf5fb;
+            color: #2980b9;
         }
 
         .badge.green {
@@ -472,87 +481,97 @@
 <body>
 
 <header>
-    <h1>🇪🇸 Klausur-Trainer: Unidad 3 & Textarbeit</h1>
-    <p>Dein Kompakt-Training für die bevorstehende Klausur: Wortschatz, Redemittel (Resumen & Comentario), Hintergrundwissen & KI-Übung.</p>
+    <h1>🇪🇸 Entrenador para el examen: Unidad 3</h1>
+    <p>Formato del examen: <strong>Comprensión auditiva + Resumen + Comentario</strong>. Aquí tienes ayuda clara, vocabulario, frases útiles, información cultural y el AI Classroom.</p>
 </header>
 
 <div class="external-links">
     <a href="https://app.ais-chat.schule/ua/learning-scenarios/12f53263-eb57-4727-94c3-ad6118570006/dialog?inviteCode=WIJR525C" target="_blank" rel="noopener" class="ext-btn ai">
-        🤖 AI Classroom: Resumen & Comentario üben
+        🤖 AI Classroom: practicar Resumen y Comentario
     </a>
     <a href="https://mr-l-rockstar.github.io/grancon/" target="_blank" rel="noopener" class="ext-btn conj">
-        ⚡ El Gran Conjugador (Verben trainieren)
+        ⚡ El Gran Conjugador (practicar verbos)
     </a>
 </div>
 
 <nav class="nav-tabs">
-    <button class="tab-btn active" onclick="switchTab('guide')">📋 1. Klausur-Format</button>
-    <button class="tab-btn" onclick="switchTab('vocab')">📚 2. Wortschatz Unidad 3</button>
-    <button class="tab-btn" onclick="switchTab('phrases')">✍️ 3. Redemittel (Resumen/Comentario)</button>
+    <button class="tab-btn active" onclick="switchTab('guide')">📋 1. El examen</button>
+    <button class="tab-btn" onclick="switchTab('vocab')">📚 2. Vocabulario Unidad 3</button>
+    <button class="tab-btn" onclick="switchTab('phrases')">✍️ 3. Frases útiles</button>
     <button class="tab-btn" onclick="switchTab('culture')">🏛️ 4. Culturas precolombinas</button>
 </nav>
 
 <main class="container">
 
-    <!-- TAB 1: KLAUSUR-FORMAT -->
+    <!-- TAB 1: EL EXAMEN -->
     <section id="guide" class="section active">
         <div class="card">
-            <h2>So läuft die Klausur ab (Schritt-für-Schritt)</h2>
-            <p style="margin-bottom: 1rem;">Da dieses Klausurformat neu für euch ist, findet ihr hier den genauen Fahrplan. Nutzt anschließend oben den <strong>AI Classroom</strong>, um genau diesen Ablauf einmal komplett mit direktem Feedback zu trainieren!</p>
+            <h2>Formato del examen: Comprensión auditiva + Resumen + Comentario</h2>
+            <p style="margin-bottom: 1rem;">El examen tiene tres partes: <strong>comprensión auditiva</strong>, <strong>resumen</strong> y <strong>comentario</strong>. Usa el <strong>AI Classroom</strong> de arriba para practicar el <em>resumen</em> y el <em>comentario</em> con ayuda.</p>
             
-            <div class="grid-2">
-                <div class="info-box">
-                    <span class="badge">Aufgabe 1: Comprensión / Resumen</span>
-                    <h3>Was wird verlangt?</h3>
-                    <p>Eine strukturierte, sachliche Zusammenfassung der wichtigsten Aussagen des Textes (ca. 1/3 der Textlänge).</p>
+            <div class="grid-3">
+                <div class="info-box blue">
+                    <span class="badge blue">Parte 1: Comprensión auditiva</span>
+                    <h3>¿Qué es importante?</h3>
                     <ul class="clean-list" style="margin-top: 0.6rem;">
-                        <li><strong>Einleitungssatz (TATT):</strong> Textsorte, Autor, Titel, Thema (<em>El artículo «...», escrito por ..., trata de ...</em>).</li>
-                        <li><strong>Hauptteil:</strong> Nur die Kernaussagen in logischer Reihenfolge – <strong>keine</strong> Beispiele, <strong>keine</strong> Details.</li>
-                        <li><strong>Sprache:</strong> Eigene Worte, Präsens (<em>Presente</em>), sachlich-neutral.</li>
-                        <li><strong>Verboten:</strong> Zitate aus dem Text, eigene Meinung (<em>yo</em>) oder Wertungen!</li>
+                        <li><strong>Leer las preguntas antes:</strong> Lee las tareas antes de escuchar y marca palabras clave.</li>
+                        <li><strong>Ideas principales:</strong> No intentes entender cada palabra. Busca la idea general y las palabras importantes.</li>
+                        <li><strong>Segunda audición:</strong> Escucha con atención para completar lo que falta y responder bien.</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <span class="badge">Parte 2: Resumen</span>
+                    <h3>¿Qué debes hacer?</h3>
+                    <p>Explicar las ideas principales del texto de forma corta y objetiva (más o menos 1/3 del texto).</p>
+                    <ul class="clean-list" style="margin-top: 0.6rem;">
+                        <li><strong>Inicio:</strong> Tipo de texto, autor/a, título y tema (<em>El artículo «...», escrito por ..., trata de ...</em>)[cite: 5].</li>
+                        <li><strong>Cuerpo:</strong> Solo las ideas principales en presente y con <strong>tus propias palabras</strong>. Sin ejemplos largos.</li>
+                        <li><strong>¡MUY IMPORTANTE: SIN CONCLUSIÓN AL FINAL!</strong> No escribas tu propia conclusión ni un final tuyo. Termina con la última idea del texto.</li>
+                        <li><strong>Prohibido:</strong> Copiar frases del texto o dar tu opinión (<em>yo creo...</em>).</li>
                     </ul>
                 </div>
 
                 <div class="info-box green">
-                    <span class="badge green">Aufgabe 2: Comentario (Stellungnahme)</span>
-                    <h3>Was wird verlangt?</h3>
-                    <p>Eine begründete eigene Positionierung zu einer Leitfrage oder These aus dem Themenfeld.</p>
+                    <span class="badge green">Parte 3: Comentario</span>
+                    <h3>¿Qué debes hacer?</h3>
+                    <p>Dar tu opinión con buenos argumentos sobre una pregunta o un tema.</p>
                     <ul class="clean-list" style="margin-top: 0.6rem;">
-                        <li><strong>Einleitung:</strong> Hinführung zum Problem/Thema + eigene These formulieren.</li>
-                        <li><strong>Hauptteil:</strong> 2–3 Argumente (gerne Pro & Contra abwägen: <em>Por un lado... por otro lado...</em>) jeweils mit <strong>Begründung</strong> und <strong>konkretem Beispiel</strong> (z. B. aus <em>Unidad 3</em>).</li>
-                        <li><strong>Schluss:</strong> Kurzes Fazit, das deine Position abrundet (keine neuen Argumente).</li>
-                        <li><strong>Sprache:</strong> Redemittel nutzen & auf den <em>Subjuntivo</em> nach Meinungsausdrücken achten (<em>Me parece injusto que + subj.</em> / <em>No creo que + subj.</em>).</li>
+                        <li><strong>Introducción:</strong> Presenta el tema y di cuál es tu opinión[cite: 7].</li>
+                        <li><strong>Argumentos:</strong> Da 2 o 3 argumentos (puedes usar <em>Por un lado... por otro lado...</em>) con una explicación y un ejemplo (por ejemplo, de la <em>Unidad 3</em>)[cite: 7].</li>
+                        <li><strong>Final:</strong> Resume tu opinión en pocas palabras (sin ideas nuevas).</li>
+                        <li><strong>Gramática:</strong> Atención al <em>subjuntivo</em> después de expresiones como <em>Me parece injusto que...</em> o <em>No creo que...</em>[cite: 7].</li>
                     </ul>
                 </div>
             </div>
 
             <div class="info-box orange" style="margin-top: 0.5rem;">
-                <h3>⚠️ Die 4 häufigsten Stolpersteine vermeiden</h3>
+                <h3>⚠️ Errores típicos que debes evitar</h3>
                 <ul class="clean-list">
-                    <li><strong>Copy & Paste im Resumen:</strong> Sätze aus dem Text abschreiben gibt Punktabzug. Formuliere mit deinen eigenen Vokabeln um!</li>
-                    <li><strong>Vermischung der Aufgaben:</strong> Im <em>Resumen</em> hat deine Meinung nichts verloren – im <em>Comentario</em> wird der Text nicht noch einmal nacherzählt.</li>
-                    <li><strong>Zeitmanagement:</strong> Plane ca. 15 Min. zum Lesen & Markieren ein, ca. 35 % der Schreibzeit für das <em>Resumen</em>, ca. 55 % für den <em>Comentario</em> und 10 Min. zum Korrekturlesen (Akzente, Verben, <em>concordancia</em>).</li>
-                    <li><strong>Wortschatz gezielt einsetzen:</strong> Nutze die Redemittel aus Tab 3 und das thematische Vokabular aus Tab 2 statt deutscher Umschreibungen.</li>
+                    <li><strong>¡Sin conclusión en el resumen!</strong> Cuando termina la última idea del texto, tu resumen se acaba. No añadas una conclusión personal.</li>
+                    <li><strong>No copies del texto:</strong> Escribe con tus palabras en el resumen.</li>
+                    <li><strong>No mezcles las tareas:</strong> En el resumen no hay opinión; en el comentario no repitas todo el texto.</li>
+                    <li><strong>Repasa al final:</strong> Mira los acentos, los verbos y el género/número (<em>concordancia</em>).</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- TAB 2: THEMATISCHER WORTSCHATZ -->
+    <!-- TAB 2: VOCABULARIO UNIDAD 3 -->
     <section id="vocab" class="section">
         <div class="card">
-            <h2>Thematischer Wortschatz: Unidad 3</h2>
+            <h2>Vocabulario temático: Unidad 3</h2>
             <div class="controls">
                 <div class="filter-group" id="vocab-filters">
-                    <button class="pill-btn active" onclick="filterVocab('all', this)">Alle (82)</button>
+                    <button class="pill-btn active" onclick="filterVocab('all', this)">Todo (82)</button>
                     <button class="pill-btn" onclick="filterVocab('primer', this)">Primer paso</button>
                     <button class="pill-btn" onclick="filterVocab('bloqueA', this)">Bloque A (Conquista)</button>
-                    <button class="pill-btn" onclick="filterVocab('bloqueB', this)">Bloque B (Stadt & Umwelt)</button>
+                    <button class="pill-btn" onclick="filterVocab('bloqueB', this)">Bloque B (Ciudad y medioambiente)</button>
                 </div>
                 <div class="mode-switch">
-                    <button class="mode-btn active" id="v-mode-card" onclick="setVocabMode('card')">Karteikarten</button>
-                    <button class="mode-btn" id="v-mode-quiz" onclick="setVocabMode('quiz')">Quiz-Test</button>
-                    <button class="mode-btn" id="v-mode-list" onclick="setVocabMode('list')">Liste</button>
+                    <button class="mode-btn active" id="v-mode-card" onclick="setVocabMode('card')">Tarjetas</button>
+                    <button class="mode-btn" id="v-mode-quiz" onclick="setVocabMode('quiz')">Quiz</button>
+                    <button class="mode-btn" id="v-mode-list" onclick="setVocabMode('list')">Lista</button>
                 </div>
             </div>
 
@@ -563,13 +582,13 @@
                         <div class="fc-tag" id="v-card-cat">Bloque A</div>
                         <div class="fc-main" id="v-card-front">el conquistador</div>
                         <div class="fc-sub" id="v-card-ex"></div>
-                        <div class="fc-hint">👆 Klicken zum Umdrehen (DE ↔ ES)</div>
+                        <div class="fc-hint">👆 Haz clic para girar la tarjeta (ES ↔ DE)</div>
                     </div>
                     <div class="fc-nav">
-                        <button class="action-btn secondary" onclick="prevVocab()">← Zurück</button>
+                        <button class="action-btn secondary" onclick="prevVocab()">← Anterior</button>
                         <span id="v-counter" style="font-weight: 700;">1 / 82</span>
-                        <button class="action-btn secondary" onclick="shuffleVocab()">🔀 Mischen</button>
-                        <button class="action-btn" onclick="nextVocab()">Weiter →</button>
+                        <button class="action-btn secondary" onclick="shuffleVocab()">🔀 Mezclar</button>
+                        <button class="action-btn" onclick="nextVocab()">Siguiente →</button>
                     </div>
                 </div>
             </div>
@@ -577,553 +596,5 @@
             <!-- Quiz View -->
             <div id="vocab-quiz-view" style="display: none;">
                 <div class="quiz-box">
-                    <div class="quiz-question" id="v-quiz-q">Was heißt „la profecía“?</div>
-                    <div class="quiz-options" id="v-quiz-opts"></div>
-                    <div class="quiz-status">
-                        <span id="v-quiz-score">Punkte: 0 / 0</span>
-                        <button class="action-btn" onclick="nextVocabQuiz()">Nächste Frage →</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- List View -->
-            <div id="vocab-list-view" style="display: none;">
-                <div class="vocab-table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Spanisch</th>
-                                <th>Deutsch</th>
-                                <th>Bereich</th>
-                            </tr>
-                        </thead>
-                        <tbody id="v-table-body"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TAB 3: FUNKTIONALES VOKABULAR -->
-    <section id="phrases" class="section">
-        <div class="card">
-            <h2>Funktionales Vokabular: Resumen & Comentario</h2>
-            <div class="controls">
-                <div class="filter-group" id="phrase-filters">
-                    <button class="pill-btn active" onclick="filterPhrases('all', this)">Alle Redemittel</button>
-                    <button class="pill-btn" onclick="filterPhrases('resumen', this)">Nur Resumen</button>
-                    <button class="pill-btn" onclick="filterPhrases('comentario', this)">Nur Comentario</button>
-                </div>
-                <div class="mode-switch">
-                    <button class="mode-btn active" id="p-mode-card" onclick="setPhraseMode('card')">Karteikarten</button>
-                    <button class="mode-btn" id="p-mode-quiz" onclick="setPhraseMode('quiz')">Quiz-Test</button>
-                    <button class="mode-btn" id="p-mode-list" onclick="setPhraseMode('list')">Übersicht</button>
-                </div>
-            </div>
-
-            <!-- Phrase Flashcards -->
-            <div id="phrase-card-view">
-                <div class="flashcard-wrapper">
-                    <div class="flashcard" onclick="flipPhraseCard()">
-                        <div class="fc-tag" id="p-card-cat">Resumen – Einleitung</div>
-                        <div class="fc-main" id="p-card-front">aborda el tema de ...</div>
-                        <div class="fc-sub" id="p-card-ex"></div>
-                        <div class="fc-hint">👆 Klicken zum Umdrehen</div>
-                    </div>
-                    <div class="fc-nav">
-                        <button class="action-btn secondary" onclick="prevPhrase()">← Zurück</button>
-                        <span id="p-counter" style="font-weight: 700;">1 / 42</span>
-                        <button class="action-btn secondary" onclick="shufflePhrases()">🔀 Mischen</button>
-                        <button class="action-btn" onclick="nextPhrase()">Weiter →</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phrase Quiz -->
-            <div id="phrase-quiz-view" style="display: none;">
-                <div class="quiz-box">
-                    <div class="quiz-question" id="p-quiz-q">Frage</div>
-                    <div class="quiz-options" id="p-quiz-opts"></div>
-                    <div class="quiz-status">
-                        <span id="p-quiz-score">Punkte: 0 / 0</span>
-                        <button class="action-btn" onclick="nextPhraseQuiz()">Nächste Frage →</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phrase List -->
-            <div id="phrase-list-view" style="display: none;">
-                <div class="vocab-table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Spanisch (Redemittel)</th>
-                                <th>Deutsch / Funktion</th>
-                                <th>Textsorte</th>
-                            </tr>
-                        </thead>
-                        <tbody id="p-table-body"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TAB 4: CULTURAS PRECOLOMBINAS -->
-    <section id="culture" class="section">
-        <div class="card">
-            <h2>Kompakt-Wissen: Culturas precolombinas & Conquista</h2>
-            <p style="margin-bottom: 1rem;">Dieses Hintergrundwissen hilft dir, Texte schnell einzuordnen und im <strong>Comentario</strong> fundierte historische Beispiele zu nennen.</p>
-
-            <div class="grid-2">
-                <div class="info-box">
-                    <span class="badge">Mesoamerika (heutiges Mexiko / Guatemala)</span>
-                    <h3>1. Los Mayas (ca. 250–900 n. Chr.)</h3>
-                    <ul class="clean-list">
-                        <li><strong>Zentrum:</strong> Halbinsel Yucatán, Guatemala, Honduras (Stadtstaaten wie Chichén Itzá, Tikal).</li>
-                        <li><strong>Errungenschaften:</strong> Hochpräziser Kalender, Astronomie, eigene Hieroglyphenschrift, Erfindung der Zahl Null, beeindruckende Stufenpyramiden (<em>templos</em>).</li>
-                        <li><strong>Niedergang:</strong> Viele klassische Städte waren bereits vor Ankunft der Spanier (vermutlich durch Dürren/Kriege) verlassen.</li>
-                    </ul>
-                </div>
-
-                <div class="info-box">
-                    <span class="badge">Zentralmexiko</span>
-                    <h3>2. Los Aztecas (ca. 1325–1521)</h3>
-                    <ul class="clean-list">
-                        <li><strong>Hauptstadt:</strong> <em>Tenochtitlán</em> (auf einer Insel im Texcoco-See – heute Mexiko-Stadt) mit Aquädukten (<em>acueductos</em>) und Kanälen.</li>
-                        <li><strong>Gesellschaft:</strong> Starkes Militärreich unter einem Herrscher (<em>el emperador Moctezuma II</em>), unterwarf Nachbarvölker (<em>someter</em>) und forderte Tribute.</li>
-                        <li><strong>Religion:</strong> Polytheismus, Sonnengott Huitzilopochtli, Menschenopfer (<em>sacrificios humanos</em>) zum Erhalt der Weltordnung.</li>
-                    </ul>
-                </div>
-
-                <div class="info-box green">
-                    <span class="badge green">Andenraum (Peru, Ecuador, Bolivien, Chile)</span>
-                    <h3>3. Los Incas (ca. 1438–1533)</h3>
-                    <ul class="clean-list">
-                        <li><strong>Hauptstadt:</strong> Cusco (bekannte Ruinenstadt: <em>Machu Picchu</em>).</li>
-                        <li><strong>Organisation:</strong> Riesiges Straßennetz (<em>Qhapaq Ñan</em>), Botenläufer, Knotenschrift (<em>Quipu</em>), Terrassenfeldbau in den Anden.</li>
-                        <li><strong>Schwäche bei Ankunft der Spanier:</strong> Geschwächt durch einen blutigen Bürgerkrieg zwischen den Brüdern Atahualpa und Huáscar sowie eingeschleppte Krankheiten.</li>
-                    </ul>
-                </div>
-
-                <div class="info-box orange">
-                    <span class="badge">1492 – 16. Jahrhundert</span>
-                    <h3>4. La Conquista (Die Eroberung)</h3>
-                    <ul class="clean-list">
-                        <li><strong>Hernán Cortés (1519–1521):</strong> Erobert das Aztekenreich. Erfolgsfaktoren: Bündnisse mit unterworfenen indigenen Völkern (z. B. Tlaxcalteken), Überlegenheit durch Stahlwaffen/Pferde, Prophezeiungen sowie verheerende Epidemien (Pocken – <em>la enfermedad / la epidemia</em>).</li>
-                        <li><strong>Francisco Pizarro (1532–1533):</strong> Erobert das Inkareich und lässt Herrscher Atahualpa hinrichten.</li>
-                        <li><strong>Folgen:</strong> Zerstörung indigener Kulturen/Tempel, Zwangsmissionierung, Ausbeutung (<em>Encomienda</em>-System) und dramatischer Bevölkerungsrückgang.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card" style="background: #f8fafc; margin-top: 1rem; margin-bottom: 0;">
-                <h3>💡 Argumentations-Hilfe für den Comentario: Wie bewerten wir die Conquista heute?</h3>
-                <div class="grid-2" style="margin-top: 0.8rem;">
-                    <div>
-                        <strong>Perspektive 1: Kritik & Verantwortung (<em>visión de los vencidos</em>)</strong>
-                        <ul class="clean-list" style="margin-top: 0.4rem;">
-                            <li>Zerstörung hoch entwickelter Zivilisationen, Sprachen und Wissensschätze.</li>
-                            <li>Millionenfacher Tod durch Gewalt, Zwangsarbeit und Krankheiten.</li>
-                            <li>Anhaltende soziale Ungleichheit und Diskriminierung indigener Bevölkerungsgruppen (<em>los indígenas</em>) bis heute.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Perspektive 2: Historischer Kontext & Mestizaje</strong>
-                        <ul class="clean-list" style="margin-top: 0.4rem;">
-                            <li>Entstehung einer neuen, gemischten Kultur (<em>el mestizaje</em>) in Sprache, Musik, Küche und Architektur.</li>
-                            <li>Auch das Aztekenreich war kein friedliches Paradies, sondern unterdrückte andere indigene Völker (weshalb diese mit Cortés kämpften).</li>
-                            <li>Statt pauschaler Verurteilung heute: Aufarbeitung, Schutz indigener Rechte und kultureller Respekt.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</main>
-
-<script>
-    // --- DATEN: THEMATISCHER WORTSCHATZ (UNIDAD 3) ---
-    const vocabData = [
-        // Primer paso
-        { es: "poderoso, -a", de: "mächtig", cat: "primer", ex: "el poder = die Macht" },
-        { es: "indígena", de: "einheimisch; Ureinwohner-", cat: "primer", ex: "los pueblos indígenas" },
-        { es: "amistoso, -a", de: "freundlich; freundschaftlich", cat: "primer", ex: "= amable" },
-        { es: "la ruina", de: "die Ruine", cat: "primer", ex: "En mi ciudad hay ruinas antiguas muy interesantes." },
-        { es: "desarrollado, -a", de: "entwickelt", cat: "primer", ex: "Los países desarrollados tienen una renta per cápita alta." },
-        { es: "la enfermedad", de: "die Krankheit", cat: "primer", ex: "enfermo, -a = krank" },
-        { es: "el café", de: "der Kaffee", cat: "primer", ex: "la cafetería = das Café" },
-        { es: "la colonia", de: "die Kolonie", cat: "primer", ex: "Muchos países de Latinoamérica fueron colonias españolas." },
-        { es: "independizarse (z-c) de algo/alguien", de: "von etw./jdm unabhängig werden; die Unabhängigkeit erlangen", cat: "primer", ex: "En 1821 México se independizó de España." },
-        { es: "a finales de", de: "(am) Ende (+ Monat, Jahr ...)", cat: "primer", ex: "La excursión es a finales de mayo." },
-        { es: "a principios de", de: "Anfang (+ Monat, Jahr ...)", cat: "primer", ex: "al principio = am Anfang" },
-
-        // Bloque A
-        { es: "atacar (c-qu) algo / a alguien", de: "etw./jdn angreifen", cat: "bloqueA", ex: "Fueron atacados por un hombre." },
-        { es: "el casco", de: "der Helm", cat: "bloqueA", ex: "" },
-        { es: "el conquistador / la conquistadora", de: "der Eroberer / die Eroberin", cat: "bloqueA", ex: "la conquista = die Eroberung; conquistar = erobern" },
-        { es: "destruir (-y-) algo", de: "etw. zerstören", cat: "bloqueA", ex: "El ejército destruyó la fortaleza. (↔ construir)" },
-        { es: "el emperador / la emperatriz", de: "der Kaiser / die Kaiserin", cat: "bloqueA", ex: "el imperio = das Reich" },
-        { es: "la espada", de: "das Schwert", cat: "bloqueA", ex: "Fueron atacados por un hombre con una espada." },
-        { es: "la flecha", de: "der Pfeil", cat: "bloqueA", ex: "" },
-        { es: "lanzar (z-c) algo", de: "etw. werfen", cat: "bloqueA", ex: "" },
-        { es: "matar a alguien", de: "jdn töten", cat: "bloqueA", ex: "" },
-        { es: "la piedra", de: "der Stein", cat: "bloqueA", ex: "Creo que tengo una piedra en el zapato." },
-        { es: "la revuelta", de: "die Revolte; der Aufstand", cat: "bloqueA", ex: "Ha estallado una revuelta entre la población." },
-        { es: "el tesoro", de: "der Schatz", cat: "bloqueA", ex: "Se ha encontrado un barco español con un tesoro enorme." },
-        { es: "tratar de algo", de: "von etw. handeln", cat: "bloqueA", ex: "tratar algo / a alguien = etw./jdn behandeln" },
-        { es: "el héroe / la heroína", de: "der Held / die Heldin", cat: "bloqueA", ex: "" },
-        { es: "azteca", de: "aztekisch", cat: "bloqueA", ex: "los aztecas" },
-        { es: "la profecía", de: "die Prophezeiung", cat: "bloqueA", ex: "La profecía dice que vendrá un nuevo rey." },
-        { es: "el esclavo / la esclava", de: "der Sklave / die Sklavin", cat: "bloqueA", ex: "" },
-        { es: "ganarse el favor de alguien", de: "die Gunst von jdm gewinnen", cat: "bloqueA", ex: "" },
-        { es: "aumentar algo", de: "etw. steigern", cat: "bloqueA", ex: "La empresa aumentó su producción en un 10% el año pasado." },
-        { es: "el odio", de: "der Hass", cat: "bloqueA", ex: "odiar algo / a alguien = etw./jdn hassen (↔ el amor)" },
-        { es: "someter a alguien", de: "jdn unterwerfen", cat: "bloqueA", ex: "Los pueblos indígenas fueron sometidos por los europeos." },
-        { es: "la superioridad", de: "die Überlegenheit", cat: "bloqueA", ex: "" },
-        { es: "militar", de: "Militär-, militärisch", cat: "bloqueA", ex: "" },
-        { es: "el sacrificio", de: "das Opfer", cat: "bloqueA", ex: "hacer sacrificios = Opfer darbringen" },
-        { es: "humano, -a", de: "Menschen-, menschlich", cat: "bloqueA", ex: "los sacrificios humanos" },
-        { es: "asesinar a alguien", de: "jdn ermorden", cat: "bloqueA", ex: "= matar a alguien" },
-        { es: "estallar", de: "ausbrechen", cat: "bloqueA", ex: "Ha estallado una revuelta entre la población." },
-        { es: "calmar algo / a alguien", de: "etw./jdn besänftigen", cat: "bloqueA", ex: "Intentó calmar al perro con su voz." },
-        { es: "según", de: "laut; nach", cat: "bloqueA", ex: "Según Carlos el profesor está enfermo." },
-        { es: "causar algo", de: "etw. verursachen", cat: "bloqueA", ex: "" },
-        { es: "escapar de algo / alguien", de: "vor etw./jdm fliehen; etw./jdm entkommen", cat: "bloqueA", ex: "Ernesto escapó de Cuba con su familia." },
-        { es: "aprovecharse de algo / alguien", de: "etw./jdn ausnutzen", cat: "bloqueA", ex: "Se aprovechó de nuestra amistad para conseguir información." },
-        { es: "la enemistad", de: "die Feindschaft", cat: "bloqueA", ex: "el enemigo / la enemiga = der Feind / die Feindin" },
-        { es: "comenzar (z-c, -ie-) algo", de: "etw. anfangen", cat: "bloqueA", ex: "= empezar (z-c, -ie-) (↔ terminar)" },
-        { es: "mandar hacer algo", de: "etw. machen lassen; etw. veranlassen", cat: "bloqueA", ex: "Mandó construir una casa." },
-        { es: "la libertad", de: "die Freiheit", cat: "bloqueA", ex: "libre = frei" },
-        { es: "la epidemia", de: "die Epidemie", cat: "bloqueA", ex: "" },
-        { es: "mortal", de: "tödlich", cat: "bloqueA", ex: "la muerte = der Tod; morir(se) = sterben" },
-        { es: "la población", de: "die Bevölkerung", cat: "bloqueA", ex: "poblado, -a = besiedelt" },
-        { es: "el valle", de: "das Tal", cat: "bloqueA", ex: "Hicimos senderismo por un valle muy bonito." },
-        { es: "la muralla", de: "die Mauer; die Stadtmauer", cat: "bloqueA", ex: "" },
-        { es: "la madera", de: "das Holz", cat: "bloqueA", ex: "" },
-        { es: "el canal", de: "der Kanal", cat: "bloqueA", ex: "" },
-        { es: "el acueducto", de: "der Aquädukt", cat: "bloqueA", ex: "" },
-        { es: "el templo", de: "der Tempel", cat: "bloqueA", ex: "" },
-
-        // Bloque B & Zusatz
-        { es: "malgastar algo", de: "etw. verschwenden", cat: "bloqueB", ex: "¿Por qué malgastas tu tiempo con esos juegos?" },
-        { es: "ahorrar algo", de: "etw. sparen", cat: "bloqueB", ex: "Ahorro dinero para irme de vacaciones." },
-        { es: "la energía", de: "die Energie", cat: "bloqueB", ex: "" },
-        { es: "consumir algo", de: "etw. verbrauchen; konsumieren", cat: "bloqueB", ex: "Consumes más agua de la necesaria." },
-        { es: "reducir (-zc-) algo", de: "etw. reduzieren, verringern, senken", cat: "bloqueB", ex: "Es importante reducir los residuos." },
-        { es: "los residuos (pl.)", de: "der Abfall", cat: "bloqueB", ex: "= la basura" },
-        { es: "reciclar algo", de: "etw. recyceln, wiederverwerten", cat: "bloqueB", ex: "el reciclaje = das Recycling" },
-        { es: "la basura", de: "der Müll", cat: "bloqueB", ex: "Mis vecinos no piensan en el medioambiente y no reciclan su basura." },
-        { es: "el transporte (público)", de: "der (öffentliche) Nahverkehr / Transport", cat: "bloqueB", ex: "El transporte público de esta ciudad es muy bueno." },
-        { es: "el uso", de: "der Gebrauch, die Verwendung", cat: "bloqueB", ex: "El uso del móvil en clase está prohibido." },
-        { es: "el vehículo", de: "das Fahrzeug", cat: "bloqueB", ex: "" },
-        { es: "la megalópolis", de: "die Megacity; der Ballungsraum", cat: "bloqueB", ex: "" },
-        { es: "urbano, -a", de: "Stadt-; städtisch", cat: "bloqueB", ex: "La población urbana ha crecido mucho." },
-        { es: "la planta de aguas residuales", de: "die Kläranlage", cat: "bloqueB", ex: "" },
-        { es: "el basurero", de: "die Mülldeponie", cat: "bloqueB", ex: "" },
-        { es: "la queja", de: "die Klage", cat: "bloqueB", ex: "quejarse = sich beklagen" },
-        { es: "común", de: "häufig; üblich", cat: "bloqueB", ex: "La dificultad más común al estudiar español es el subjuntivo." },
-        { es: "la prohibición", de: "das Verbot", cat: "bloqueB", ex: "estar prohibido, -a = verboten sein" },
-        { es: "fomentar algo", de: "etw. fördern", cat: "bloqueB", ex: "Hay que fomentar el deporte para evitar enfermedades." },
-        { es: "de calidad", de: "hochwertig, Qualitäts-", cat: "bloqueB", ex: "Mallorca necesita un turismo de calidad." },
-        { es: "el espacio", de: "der Platz, der Raum", cat: "bloqueB", ex: "= el lugar" },
-        { es: "tras", de: "nach", cat: "bloqueB", ex: "= después de" },
-        { es: "aún", de: "(immer) noch", cat: "bloqueB", ex: "= todavía" },
-        { es: "la pobreza", de: "die Armut", cat: "bloqueB", ex: "pobre = arm (↔ la riqueza = der Reichtum)" },
-        { es: "el sueldo", de: "das Gehalt", cat: "bloqueB", ex: "Con mi sueldo no me puedo permitir lujos." },
-        { es: "dirigir (g-j) algo", de: "etw. regieren; etw. leiten", cat: "bloqueB", ex: "" },
-        { es: "la sostenibilidad", de: "die Nachhaltigkeit", cat: "bloqueB", ex: "" },
-        { es: "la herramienta", de: "das Werkzeug", cat: "bloqueB", ex: "" },
-        { es: "la condición", de: "die Bedingung", cat: "bloqueB", ex: "con la condición de que + subj." },
-        { es: "transformar algo en algo", de: "etw. in etw. verwandeln", cat: "bloqueB", ex: "El desierto se transformó en un jardín." },
-        { es: "el esfuerzo", de: "die Anstrengung", cat: "bloqueB", ex: "hacer un esfuerzo = sich anstrengen" },
-        { es: "Yo que tú / Yo, en tu lugar...", de: "Wenn ich du wäre / Ich an deiner Stelle...", cat: "bloqueB", ex: "Yo que tú, hablaría con ella. (+ Condicional)" }
-    ];
-
-    // --- DATEN: FUNKTIONALES VOKABULAR (RESUMEN & COMENTARIO) ---
-    const phraseData = [
-        // Resumen
-        { es: "extraído de un periódico", de: "entnommen aus einer Zeitung", cat: "resumen", subcat: "Resumen – Einleitung", ex: "El texto, extraído de un periódico..." },
-        { es: "titulado / que lleva el título «...»", de: "mit dem Titel / der den Titel «...» trägt", cat: "resumen", subcat: "Resumen – Einleitung", ex: "El artículo titulado «La Conquista»..." },
-        { es: "escrito por ... en ...", de: "geschrieben von ... im Jahr ...", cat: "resumen", subcat: "Resumen – Einleitung", ex: "escrito por García en 2024" },
-        { es: "El texto trata de ...", de: "Der Text handelt von ...", cat: "resumen", subcat: "Resumen – Einleitung", ex: "" },
-        { es: "En este texto, el autor aborda el tema de ...", de: "In diesem Text schneidet der Autor das Thema ... an", cat: "resumen", subcat: "Resumen – Einleitung", ex: "" },
-        { es: "El autor defiende la tesis según la cual ...", de: "Der Autor verteidigt die These, nach der ...", cat: "resumen", subcat: "Resumen – Einleitung", ex: "" },
-        { es: "El autor expone ...", de: "Der Autor legt ... dar", cat: "resumen", subcat: "Resumen – Einleitung", ex: "" },
-        { es: "Comienza analizando / aclarando ...", de: "Er beginnt damit, ... zu analysieren / zu klären", cat: "resumen", subcat: "Resumen – Aufbau (Anfang)", ex: "Comienza analizando la situación." },
-        { es: "En primer lugar / Al principio / Primero ...", de: "An erster Stelle / Zu Beginn / Zuerst ...", cat: "resumen", subcat: "Resumen – Aufbau (Anfang)", ex: "" },
-        { es: "Continúa dando ejemplos que confirman / corroboran su análisis.", de: "Er fährt fort, indem er Beispiele gibt, die seine Analyse bekräftigen / untermauern.", cat: "resumen", subcat: "Resumen – Aufbau (Mitte)", ex: "" },
-        { es: "Entonces / Luego ...", de: "Dann / Danach ...", cat: "resumen", subcat: "Resumen – Aufbau (Mitte)", ex: "" },
-        { es: "Termina explicando las consecuencias.", de: "Er endet damit, die Konsequenzen zu erklären.", cat: "resumen", subcat: "Resumen – Schluss", ex: "" },
-        { es: "Al final / Por último ...", de: "Am Ende / Zuletzt ...", cat: "resumen", subcat: "Resumen – Schluss", ex: "" },
-        { es: "modifica / rectifica", de: "(ab-, ver)ändert / berichtigt, stellt richtig", cat: "resumen", subcat: "Resumen – Schluss", ex: "rectifica lugares comunes sobre el tema = stellt Gemeinplätze richtig" },
-        { es: "El texto termina con una anécdota que muestra ...", de: "Der Text endet mit einer Anekdote, die zeigt ...", cat: "resumen", subcat: "Resumen – Schluss", ex: "" },
-
-        // Comentario
-        { es: "Es un tema muy discutido / controvertido / candente en la sociedad contemporánea.", de: "Es ist ein sehr diskutiertes / kontroverses / brisantes Thema in der heutigen Gesellschaft.", cat: "comentario", subcat: "Comentario – Thema einführen", ex: "" },
-        { es: "En la actualidad, hay una gran controversia en cuanto a ...", de: "Gegenwärtig gibt es eine große Kontroverse bezüglich ...", cat: "comentario", subcat: "Comentario – Thema einführen", ex: "" },
-        { es: "Un / Otro argumento es ...", de: "Ein / Ein weiteres Argument ist ...", cat: "comentario", subcat: "Comentario – Strukturieren", ex: "" },
-        { es: "Por un lado ...; por otro lado ...", de: "Einerseits ...; andererseits ...", cat: "comentario", subcat: "Comentario – Strukturieren", ex: "" },
-        { es: "Es verdad / cierto que ..., sin embargo ...", de: "Es stimmt / ist wahr, dass ..., jedoch ...", cat: "comentario", subcat: "Comentario – Strukturieren", ex: "" },
-        { es: "... mientras que ... / ... en cambio ...", de: "... während ... / ... hingegen ...", cat: "comentario", subcat: "Comentario – Strukturieren", ex: "" },
-        { es: "No se debe olvidar que ...", de: "Man darf nicht vergessen, dass ...", cat: "comentario", subcat: "Comentario – Strukturieren", ex: "" },
-        { es: "Los argumentos a favor / en contra son poco plausibles / bastante convincentes.", de: "Die Pro-/Contra-Argumente sind wenig plausibel / ziemlich überzeugend.", cat: "comentario", subcat: "Comentario – Bewerten", ex: "" },
-        { es: "Este argumento me parece sólido / concluyente / equivocado / inaceptable.", de: "Dieses Argument erscheint mir stichhaltig / schlüssig / falsch / inakzeptabel.", cat: "comentario", subcat: "Comentario – Bewerten", ex: "" },
-        { es: "Este argumento carece de validez / se debe cuestionar.", de: "Dieses Argument entbehrt jeder Grundlage / muss hinterfragt werden.", cat: "comentario", subcat: "Comentario – Bewerten", ex: "" },
-        { es: "El siguiente ejemplo apoya mi argumentación / este argumento.", de: "Das folgende Beispiel stützt meine Argumentation / dieses Argument.", cat: "comentario", subcat: "Comentario – Beispiele", ex: "" },
-        { es: "Para nombrar un ejemplo ... / Tomemos el ejemplo de ...", de: "Um ein Beispiel zu nennen ... / Nehmen wir das Beispiel von ...", cat: "comentario", subcat: "Comentario – Beispiele", ex: "" },
-        { es: "A mi modo de ver / juicio / entender ...", de: "Meiner Ansicht / Meinung nach ...", cat: "comentario", subcat: "Comentario – Meinung äußern", ex: "" },
-        { es: "En mi opinión ... / Desde mi punto de vista ...", de: "Meiner Meinung nach ... / Aus meiner Sicht ...", cat: "comentario", subcat: "Comentario – Meinung äußern", ex: "" },
-        { es: "No cabe duda de que ... (+ Indikativ)", de: "Es besteht kein Zweifel daran, dass ...", cat: "comentario", subcat: "Comentario – Meinung äußern", ex: "" },
-        { es: "Me parece absurdo / lógico / plausible / vergonzoso / intolerable que ... (+ Subjuntivo)", de: "Es erscheint mir absurd / logisch / plausibel / beschämend / untragbar, dass ...", cat: "comentario", subcat: "Comentario – Meinung äußern", ex: "Achtung: Auslöser für den Subjuntivo!" },
-        { es: "(No) Estoy de acuerdo con esta lógica / este argumento / lo que dice ... porque ...", de: "Ich stimme dieser Logik / diesem Argument / dem, was er sagt, (nicht) zu, weil ...", cat: "comentario", subcat: "Comentario – Meinung äußern", ex: "" },
-        { es: "Comparto la opinión de ...", de: "Ich teile die Meinung von ...", cat: "comentario", subcat: "Comentario – Meinung äußern", ex: "" }
-    ];
-
-    // --- TAB NAVIGATION ---
-    function switchTab(tabId) {
-        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.getElementById(tabId).classList.add('active');
-        event.currentTarget.classList.add('active');
-    }
-
-    // --- VOCABULARY TRAINER LOGIC ---
-    let currentVocabList = [...vocabData];
-    let vIndex = 0;
-    let vFlipped = false;
-    let vQuizScore = 0;
-    let vQuizTotal = 0;
-    let vQuizAnswered = false;
-
-    const catLabels = {
-        primer: "Primer paso",
-        bloqueA: "Bloque A (Conquista)",
-        bloqueB: "Bloque B (Stadt & Umwelt)"
-    };
-
-    function filterVocab(cat, btn) {
-        document.querySelectorAll('#vocab-filters .pill-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentVocabList = cat === 'all' ? [...vocabData] : vocabData.filter(item => item.cat === cat);
-        vIndex = 0;
-        vFlipped = false;
-        renderVocabCard();
-        renderVocabTable();
-        nextVocabQuiz();
-    }
-
-    function setVocabMode(mode) {
-        document.querySelectorAll('#vocab .mode-btn').forEach(b => b.classList.remove('active'));
-        document.getElementById('v-mode-' + mode).classList.add('active');
-        document.getElementById('vocab-card-view').style.display = mode === 'card' ? 'block' : 'none';
-        document.getElementById('vocab-quiz-view').style.display = mode === 'quiz' ? 'block' : 'none';
-        document.getElementById('vocab-list-view').style.display = mode === 'list' ? 'block' : 'none';
-        if (mode === 'quiz') nextVocabQuiz();
-    }
-
-    function renderVocabCard() {
-        const item = currentVocabList[vIndex];
-        document.getElementById('v-card-cat').textContent = catLabels[item.cat] + (vFlipped ? " • DEUTSCH" : " • ESPAÑOL");
-        document.getElementById('v-card-front').textContent = vFlipped ? item.de : item.es;
-        document.getElementById('v-card-ex').textContent = vFlipped && item.ex ? "💡 " + item.ex : "";
-        document.getElementById('v-counter').textContent = `${vIndex + 1} / ${currentVocabList.length}`;
-    }
-
-    function flipVocabCard() {
-        vFlipped = !vFlipped;
-        renderVocabCard();
-    }
-
-    function nextVocab() {
-        vIndex = (vIndex + 1) % currentVocabList.length;
-        vFlipped = false;
-        renderVocabCard();
-    }
-
-    function prevVocab() {
-        vIndex = (vIndex - 1 + currentVocabList.length) % currentVocabList.length;
-        vFlipped = false;
-        renderVocabCard();
-    }
-
-    function shuffleVocab() {
-        currentVocabList.sort(() => Math.random() - 0.5);
-        vIndex = 0;
-        vFlipped = false;
-        renderVocabCard();
-    }
-
-    function renderVocabTable() {
-        const tbody = document.getElementById('v-table-body');
-        tbody.innerHTML = currentVocabList.map(item => `
-            <tr>
-                <td><strong>${item.es}</strong>${item.ex ? `<br><small style="color:#6c7a89">${item.ex}</small>` : ''}</td>
-                <td>${item.de}</td>
-                <td><span class="badge">${catLabels[item.cat]}</span></td>
-            </tr>
-        `).join('');
-    }
-
-    function nextVocabQuiz() {
-        vQuizAnswered = false;
-        const target = currentVocabList[Math.floor(Math.random() * currentVocabList.length)];
-        const askSpanish = Math.random() > 0.5;
-        document.getElementById('v-quiz-q').textContent = askSpanish
-            ? `Was bedeutet „${target.es}“?`
-            : `Wie heißt „${target.de}“ auf Spanisch?`;
-
-        const distractors = vocabData
-            .filter(item => item.es !== target.es)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3);
-
-        const options = [target, ...distractors].sort(() => Math.random() - 0.5);
-        const optsContainer = document.getElementById('v-quiz-opts');
-        optsContainer.innerHTML = '';
-
-        options.forEach(opt => {
-            const btn = document.createElement('button');
-            btn.className = 'quiz-opt';
-            btn.textContent = askSpanish ? opt.de : opt.es;
-            btn.onclick = () => {
-                if (vQuizAnswered) return;
-                vQuizAnswered = true;
-                vQuizTotal++;
-                if (opt.es === target.es) {
-                    btn.classList.add('correct');
-                    vQuizScore++;
-                } else {
-                    btn.classList.add('wrong');
-                    Array.from(optsContainer.children).forEach(b => {
-                        if (b.textContent === (askSpanish ? target.de : target.es)) {
-                            b.classList.add('correct');
-                        }
-                    });
-                }
-                document.getElementById('v-quiz-score').textContent = `Punkte: ${vQuizScore} / ${vQuizTotal}`;
-            };
-            optsContainer.appendChild(btn);
-        });
-    }
-
-    // --- PHRASE TRAINER LOGIC ---
-    let currentPhraseList = [...phraseData];
-    let pIndex = 0;
-    let pFlipped = false;
-    let pQuizScore = 0;
-    let pQuizTotal = 0;
-    let pQuizAnswered = false;
-
-    function filterPhrases(cat, btn) {
-        document.querySelectorAll('#phrase-filters .pill-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentPhraseList = cat === 'all' ? [...phraseData] : phraseData.filter(item => item.cat === cat);
-        pIndex = 0;
-        pFlipped = false;
-        renderPhraseCard();
-        renderPhraseTable();
-        nextPhraseQuiz();
-    }
-
-    function setPhraseMode(mode) {
-        document.querySelectorAll('#phrases .mode-btn').forEach(b => b.classList.remove('active'));
-        document.getElementById('p-mode-' + mode).classList.add('active');
-        document.getElementById('phrase-card-view').style.display = mode === 'card' ? 'block' : 'none';
-        document.getElementById('phrase-quiz-view').style.display = mode === 'quiz' ? 'block' : 'none';
-        document.getElementById('phrase-list-view').style.display = mode === 'list' ? 'block' : 'none';
-        if (mode === 'quiz') nextPhraseQuiz();
-    }
-
-    function renderPhraseCard() {
-        const item = currentPhraseList[pIndex];
-        document.getElementById('p-card-cat').textContent = item.subcat + (pFlipped ? " • DEUTSCH" : " • ESPAÑOL");
-        document.getElementById('p-card-front').textContent = pFlipped ? item.de : item.es;
-        document.getElementById('p-card-ex').textContent = pFlipped && item.ex ? "💡 " + item.ex : "";
-        document.getElementById('p-counter').textContent = `${pIndex + 1} / ${currentPhraseList.length}`;
-    }
-
-    function flipPhraseCard() {
-        pFlipped = !pFlipped;
-        renderPhraseCard();
-    }
-
-    function nextPhrase() {
-        pIndex = (pIndex + 1) % currentPhraseList.length;
-        pFlipped = false;
-        renderPhraseCard();
-    }
-
-    function prevPhrase() {
-        pIndex = (pIndex - 1 + currentPhraseList.length) % currentPhraseList.length;
-        pFlipped = false;
-        renderPhraseCard();
-    }
-
-    function shufflePhrases() {
-        currentPhraseList.sort(() => Math.random() - 0.5);
-        pIndex = 0;
-        pFlipped = false;
-        renderPhraseCard();
-    }
-
-    function renderPhraseTable() {
-        const tbody = document.getElementById('p-table-body');
-        tbody.innerHTML = currentPhraseList.map(item => `
-            <tr>
-                <td><strong>${item.es}</strong></td>
-                <td>${item.de}</td>
-                <td><span class="badge ${item.cat === 'comentario' ? 'green' : ''}">${item.subcat}</span></td>
-            </tr>
-        `).join('');
-    }
-
-    function nextPhraseQuiz() {
-        pQuizAnswered = false;
-        const target = currentPhraseList[Math.floor(Math.random() * currentPhraseList.length)];
-        document.getElementById('p-quiz-q').textContent = `Welches spanische Redemittel passt zu: „${target.de}“?`;
-
-        const distractors = phraseData
-            .filter(item => item.es !== target.es)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3);
-
-        const options = [target, ...distractors].sort(() => Math.random() - 0.5);
-        const optsContainer = document.getElementById('p-quiz-opts');
-        optsContainer.innerHTML = '';
-
-        options.forEach(opt => {
-            const btn = document.createElement('button');
-            btn.className = 'quiz-opt';
-            btn.textContent = opt.es;
-            btn.onclick = () => {
-                if (pQuizAnswered) return;
-                pQuizAnswered = true;
-                pQuizTotal++;
-                if (opt.es === target.es) {
-                    btn.classList.add('correct');
-                    pQuizScore++;
-                } else {
-                    btn.classList.add('wrong');
-                    Array.from(optsContainer.children).forEach(b => {
-                        if (b.textContent === target.es) {
-                            b.classList.add('correct');
-                        }
-                    });
-                }
-                document.getElementById('p-quiz-score').textContent = `Punkte: ${pQuizScore} / ${pQuizTotal}`;
-            };
-            optsContainer.appendChild(btn);
-        });
-    }
-
-    // Init
-    renderVocabCard();
-    renderVocabTable();
-    renderPhraseCard();
-    renderPhraseTable();
-</script>
-
-</body>
-</html>
+                    <div class="quiz-question" id="v-quiz-q">¿Qué significa «la profecía»?</div>
+                    <div class="quiz
